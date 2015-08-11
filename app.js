@@ -9,7 +9,8 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', indexController.index);
+app.get('/templates/:templateName', indexController.templates);
 
-var server = app.listen(9297, function() {
+var server = app.listen(3000, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
