@@ -9,5 +9,10 @@
 }
 
 .stage {
-	padding: 16px;
+	padding: 20px;
+}
+
+.input {
+	padding: 20px;
+	border-radius: 7px;
 }

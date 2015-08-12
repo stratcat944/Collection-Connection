@@ -1,10 +1,10 @@
 var indexController = {
 	index: function(req, res) {
-		res.render('templates/landingpage.jade');
+		res.render('index');
 	},
 	templates : function(req, res){
-		console.log("templates fired");
 		// req.params.templateName
+		res.render('templates/' + req.params.templateName)
 		
 	}
 };
