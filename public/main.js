@@ -33,13 +33,19 @@ collectConnect.config(function($routeProvider){
 
 collectConnect.controller('view1', function($scope){
 	console.log('View 1 Controller!');
-	
 	$scope.createArtistAlbum = function(){
 		console.log('create', $scope.artistAlbum);
 	}
 })
 
 collectConnect.controller('view2', function($scope){
+	$scope.personnel = [{}]
+	$scope.addPerson = function(){
+		$scope.personnel.push({})
+	}
+	$scope.createPerson = function(){
+		console.log($scope.personnel);
+	}
 	console.log('View 2 Controller!');
 })
 

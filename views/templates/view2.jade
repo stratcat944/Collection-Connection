@@ -4,14 +4,14 @@ div(class="container-fluid")
 
 		div(class="col-md-12 text-center input-group input-group-md stage center-block")
 
-			form(ng-submit="")
+			form(ng-submit="createPerson()")
 				h3 Enter the Personnel, one name at a time.
 				br
 				h4 Click the Add button to add another, or the Next button to continue.
 				div(class="col-md-3")
 				div(class="col-md-6")
-					input(class="form-control text-center input" placeholder="Personnel")
+					input(class="form-control text-center input" ng-repeat="person in personnel" ng-model="person.personName" placeholder="Personnel")
 				div(class="col-md-3")
 				div(class="col-md-12")
-					button.btn.btn-default.btn-md.button(type='button') Add
-					button.btn.btn-default.btn-md.button(type='button') Next
+					.btn.btn-default.btn-md.button(ng-click='addPerson()') Add
+					button.btn.btn-default.btn-md.button(type='submit') Next
