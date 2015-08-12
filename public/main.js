@@ -23,6 +23,10 @@ collectConnect.config(function($routeProvider){
 			templateUrl : '/templates/view4',
 			controller 	: 'view4'
 		})
+		.when('/view5',{
+			templateUrl : '/templates/view5',
+			controller 	: 'view5'
+		})
 
 });
 
@@ -41,6 +45,10 @@ collectConnect.controller('view3', function($scope){
 
 collectConnect.controller('view4', function($scope){
 	console.log('View 4 Controller!');
+})
+
+collectConnect.controller('view5', function($scope){
+	console.log('View 5 Controller!');
 })
 
 
