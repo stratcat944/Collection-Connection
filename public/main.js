@@ -11,6 +11,26 @@ collectConnect.config(function($routeProvider){
 			templateUrl : '/templates/view1',
 			controller 	: 'view1'
 		})
+		.when('/view2',{
+			templateUrl : '/templates/view2',
+			controller 	: 'view2'
+		})
+		.when('/view3',{
+			templateUrl : '/templates/view3',
+			controller 	: 'view3'
+		})
+		.when('/view4',{
+			templateUrl : '/templates/view4',
+			controller 	: 'view4'
+		})
+		.when('/view5',{
+			templateUrl : '/templates/view5',
+			controller 	: 'view5'
+		})
+		.when('/view6',{
+			templateUrl : '/templates/view6',
+			controller 	: 'view6'
+		})
 
 });
 
@@ -19,9 +39,32 @@ collectConnect.config(function($routeProvider){
 
 
 collectConnect.controller('landingPage', function($scope){
-	console.log('Controller!')
+	console.log('landingPage Controller!');
 })
 
 collectConnect.controller('view1', function($scope){
-	console.log('View 1 Controller!')
+	console.log('View 1 Controller!');
 })
+
+collectConnect.controller('view2', function($scope){
+	console.log('View 2 Controller!');
+})
+
+collectConnect.controller('view3', function($scope){
+	console.log('View 3 Controller!');
+})
+
+collectConnect.controller('view4', function($scope){
+	console.log('View 4 Controller!');
+})
+
+collectConnect.controller('view5', function($scope){
+	console.log('View 5 Controller!');
+})
+
+collectConnect.controller('view6', function($scope){
+	console.log('View 6 Controller!');
+})
+
+
+
