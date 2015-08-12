@@ -2,6 +2,7 @@
 	background-color: darkgrey;
 	padding: 16px;
 	color: white;
+	font-weight: 700;
 }
 
 .button {
@@ -14,5 +15,15 @@
 
 .input {
 	padding: 20px;
+	border-radius: 7px;
+}
+
+.vert {
+	vertical-align: bottom;
+}
+
+.border {
+	/*border-style: inset;*/
+	border-color: darkgrey;
 	border-radius: 7px;
 }
