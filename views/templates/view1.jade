@@ -1,57 +1,57 @@
 div(class="container-fluid")
 
-	div(class="row")
+	form(ng-submit="createAlbum()")
 
-		div(class="col-md-12 text-center input-group input-group-md stage center-block")
+		div(class="row")
 
-			form(ng-submit="createArtistAlbum()")
+			div(class="text-center container stage center-block")
+
 				h3 Enter the Artist Name and Album Title.
 				div(class="col-md-3")
 				div(class="col-md-6")
-					input(class="form-control text-center input" ng-model="artistAlbum.artistName" placeholder="Artist Name")
-					input(class="form-control text-center input" ng-model="artistAlbum.albumName" placeholder="Album Title")
+					.form-group
+						input.form-control.text-center.input(ng-model="artistAlbum.artistName" placeholder="Artist Name")
+					.form-group
+						input(class="form-control text-center input" ng-model="artistAlbum.albumName" placeholder="Album Title")
 				div(class="col-md-3")
-				div(class="col-md-12")
 
-	div(class="row")
+		div(class="row")
 
-		div(class="col-md-12 text-center input-group input-group-md stage center-block")
+			div(class="text-center container stage center-block")
 
-			form(ng-submit="createPerson()")
-				h3 Enter the Personnel.
-				h4 Click the Add button to add another, or the Next button to continue.
-				div(class="col-md-3")
-				div(class="col-md-6")
-					input(class="form-control text-center input" ng-model="person.personName" placeholder="Personnel")
-				div(class="col-md-3")
-				div(class="col-md-12")
-					.btn.btn-default.btn-md.button(ng-click='addPerson()') Add Another
+					h3 Enter the Personnel.
+					h4 Click the Add button to add another, or the Next button to continue.
+					div(class="col-md-3")
+					div(class="col-md-6")
+						.form-group
+							input.form-control.text-center.input(ng-repeat="person in personnel" ng-model="person.personName" placeholder="Personnel")
+					div(class="col-md-3")
+						.form-group
+							.btn.btn-default.btn-md.button(ng-click='addPerson()') Add Another
 
-	div(class="row")
+		div(class="row")
 
-		div(class="col-md-12 text-center input-group input-group-md stage center-block")
+			div(class="text-center stage center-block")
 
-			form(ng-submit="")
-				h3 Enter the Album Tracks.
-				br
-				h4 Click the Add button to add another Album Track, or the Next button to continue.
-				div(class="col-md-3")
-				div(class="col-md-6")
-					input(class="form-control text-center input" placeholder="Album Tracks")
-				div(class="col-md-3")
-				div(class="col-md-12")
-					button.btn.btn-default.btn-md.button(type='button') Add Another
+					h3 Enter the Album Tracks.
+					h4 Click the Add button to add another Album Track, or the Next button to continue.
+					div(class="col-md-3")
+					div(class="col-md-6")
+						.form-group
+							input.form-control.text-center.input(ng-repeat="track in tracks" ng-model="track.trackName" placeholder="Album Tracks")
+					div(class="col-md-3")
+						.form-group
+							.btn.btn-default.btn-md.button(ng-click='addTrack') Add Another
 
-	div(class="row")
+		div(class="row")
 
-		div(class="col-md-12 text-center input-group input-group-md stage center-block")
+			div(class="col-md-12 text-center input-group input-group-md stage center-block")
 
-			form(ng-submit="")
-				h3 Enter the Label and Release Year.
-				div(class="col-md-3")
-				div(class="col-md-6")
-					input(class="form-control text-center input" placeholder="Label")
-					input(class="form-control text-center input" placeholder="Release Year")
-				div(class="col-md-3")
-				div(class="col-md-12")
-					button.btn.btn-default.btn-md.button(type='button') Submit
+					h3 Enter the Label and Release Year.
+					div(class="col-md-3")
+					div(class="col-md-6")
+						input(class="form-control text-center input" placeholder="Label")
+						input(class="form-control text-center input" placeholder="Release Year")
+					div(class="col-md-3")
+					div(class="col-md-12")
+						button.btn.btn-default.btn-md.button(type='button') Submit
