@@ -11,7 +11,7 @@ collectConnect.config(function($routeProvider){
 });
 
 
-collectConnect.controller('view1', function($scope){
+collectConnect.controller('view1', function($scope, $http){
 	console.log('View 1 Controller!');
 	$scope.album = {}
 	$scope.album.personnel = [{}]
@@ -24,6 +24,11 @@ collectConnect.controller('view1', function($scope){
 	}
 	$scope.createAlbum = function(){
 		console.log('create', $scope.album);
+		$http.post('/albums/create', $scope.album)
+		.then(function(returnData){
+			console.log(returnData);
+			$scope.album = {}
+		})
 	}
 })
 
