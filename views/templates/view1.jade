@@ -1,59 +1,59 @@
-div(class="container-fluid")
+div.container-fluid
 
 	form(ng-submit="createAlbum()")
 
-		div(class="row")
+		div.row
 
-			div(class="text-center container stage center-block")
+			div.text-center.container.stage.center-block
 
 				h3 Enter the Artist Name and Album Title.
-				div(class="col-md-3")
-				div(class="col-md-6")
+				div.col-md-3
+				div.col-md-6
 					.form-group
 						input.form-control.text-center.input(ng-model="artistAlbum.artistName" placeholder="Artist Name")
 					.form-group
-						input(class="form-control text-center input" ng-model="artistAlbum.albumName" placeholder="Album Title")
-				div(class="col-md-3")
+						input.form-control.text-center.input(ng-model="artistAlbum.albumName" placeholder="Album Title")
+				div.col-md-3
 
-		div(class="row")
+		div.row
 
-			div(class="text-center container stage center-block")
+			div.text-center.container.stage.center-block
 
 					h3 Enter the Personnel.
 					h4 Click the Add button to add another, or the Next button to continue.
-					div(class="col-md-3")
-					div(class="col-md-6")
+					div.col-md-3
+					div.col-md-6
 						.form-group
 							input.form-control.text-center.input(ng-repeat="person in personnel" ng-model="person.personName" placeholder="Personnel")
 						.form-group
 							.btn.btn-default.btn-md.button(ng-click='addPerson()') Add Another
-					div(class="col-md-3")
+					div.col-md-3
 
-		div(class="row")
+		div.row
 
-			div(class="text-center stage center-block")
+			div.text-center.stage.center-block
 
 					h3 Enter the Album Tracks.
 					h4 Click the Add button to add another Album Track, or the Next button to continue.
-					div(class="col-md-3")
-					div(class="col-md-6")
+					div.col-md-3
+					div.col-md-6
 						.form-group
 							input.form-control.text-center.input(ng-repeat="track in tracks" ng-model="track.trackName" placeholder="Album Tracks")
 						.form-group
 							.btn.btn-default.btn-md.button(ng-click='addTrack()') Add Another
-					div(class="col-md-3")
+					div.col-md-3
 
-		div(class="row")
+		div.row
 
-			div(class="text-center stage center-block")
+			div.text-center.stage.center-block
 
 					h3 Enter the Label and Release Year.
-					div(class="col-md-3")
-					div(class="col-md-6")
+					div.col-md-3
+					div.col-md-6
 						.form-group
 							input.form-control.text-center.input(placeholder="Label")
 						.form-group
 							input.form-control.text-center.input(placeholder="Release Year")
 						.form-group
 							.btn.btn-default.btn-md.button(type='button') Submit
-					div(class="col-md-3")
+					div.col-md-3
