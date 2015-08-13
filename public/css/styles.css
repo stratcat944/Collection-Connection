@@ -27,3 +27,97 @@
 	border-color: darkgrey;
 	border-radius: 7px;
 }
+
+/*################## CSS from vulgarpicture.com ##################*/
+
+#LP_smiths {
+	position: absolute;
+	  margin: -150px auto auto 25px;
+	 z-index: 13;
+}
+
+#EP7_william {
+	position: absolute;
+	  margin: 340px auto auto 820px;
+	 z-index: 20;
+}
+
+#EP7_meat {
+	position: absolute;
+	  margin: 300px auto auto 232px;
+	 z-index: 12;
+}
+
+#EP7_irish {
+	position: absolute;
+	  margin: 680px auto auto 410px;
+	 z-index: 25;
+}
+
+#EP12_sheila {
+	position: absolute;
+	  margin: 245px auto auto 395px;	
+	 z-index: 11;
+}
+
+#CD_southpaw {
+	position: absolute;
+	  margin: 115px auto auto 480px;
+	 z-index: 14;
+}
+
+#albumContainer {
+	z-index: 1;
+}
+
+.rpm33>img{
+	width:20%;
+}
+
+.rpm33 {
+	-webkit-transition: all 60s linear;
+	   -moz-transition: all 60s ease-in-out;
+	    -ms-transition: all 60s ease-out;
+		 -o-transition: all 60s ease-out;
+			transition: all 60s ease-out;
+}
+.rpm33:hover {
+	-webkit-transform: rotate(11880deg);
+	   -moz-transform: rotate(11880deg);
+		-ms-transform: rotate(11880deg);
+		 -o-transform: rotate(11880deg);	
+			transform: rotate(11880deg);
+}			
+
+.rpm45 {
+	-webkit-transition: all 60s linear;
+	   -moz-transition: all 60s ease-in-out;
+	    -ms-transition: all 60s ease-out;
+		 -o-transition: all 60s ease-out;
+			transition: all 60s ease-out;
+}
+.rpm45:hover {
+	-webkit-transform: rotate(16200deg);
+	   -moz-transform: rotate(16200deg);
+		-ms-transform: rotate(16200deg);
+		 -o-transform: rotate(16200deg);	
+			transform: rotate(16200deg);
+}
+.rpm300 {
+	-webkit-transition: all 60s linear;
+	   -moz-transition: all 60s ease-in-out;
+	    -ms-transition: all 60s ease-out;
+		 -o-transition: all 60s ease-out;
+			transition: all 60s ease-out;
+}
+.rpm300:hover {
+	-webkit-transform: rotate(108000deg);
+	   -moz-transform: rotate(108000deg);
+		-ms-transform: rotate(108000deg);
+		 -o-transform: rotate(108000deg);	
+			transform: rotate(108000deg);
+}
+
+.recordContainer {
+	position: relative;
+}
