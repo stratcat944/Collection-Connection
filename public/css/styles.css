@@ -3,19 +3,7 @@
 	padding: 6%;
 	color: white;
 	font-weight: 700;
-}
-
-/*.button {
-	border-radius: 7px;
-}*/
-
-.stage {
-	padding: 20px;
-}
-
-/*.input {
-	padding: 20px;
-	border-radius: 7px;*/
+	z-index: 4;
 }
 
 .vert {
@@ -29,41 +17,42 @@
 }
 
 /*################## CSS from vulgarpicture.com ##################*/
+#container {
+	  width: 1242px;
+	 height: 1242px;
+	 margin: 0px 0px 0px 0px;	
+	z-index: 1;
+}
 
-#LP_smiths {
+
+#white_trnspt {
 	position: absolute;
 	  margin: -190px auto auto -180px;
 	 z-index: 13;
 }
 
-#EP7_william {
+#shoplifters_trnspt {
 	position: absolute;
 	  margin: -190px auto auto 800px;
 	 z-index: 20;
 }
 
-#EP7_meat {
+#alone_trnspt {
 	position: absolute;
 	  margin: 300px auto auto 232px;
 	 z-index: 12;
 }
 
-#EP7_irish {
+#purple_trnspt {
 	position: absolute;
 	  margin: 680px auto auto 410px;
 	 z-index: 25;
 }
 
-#EP12_sheila {
+#diary_picdisc {
 	position: absolute;
 	  margin: 245px auto auto 395px;	
 	 z-index: 11;
-}
-
-#CD_southpaw {
-	position: absolute;
-	  margin: 115px auto auto 480px;
-	 z-index: 14;
 }
 
 #albumContainer {
