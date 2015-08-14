@@ -32,13 +32,13 @@
 
 #LP_smiths {
 	position: absolute;
-	  margin: -150px auto auto 25px;
+	  margin: -190px auto auto -180px;
 	 z-index: 13;
 }
 
 #EP7_william {
 	position: absolute;
-	  margin: 340px auto auto 820px;
+	  margin: -190px auto auto 800px;
 	 z-index: 20;
 }
 
@@ -70,9 +70,9 @@
 	z-index: 1;
 }
 
-.rpm33>img{
+/*.rpm33>img{
 	width:20%;
-}
+}*/
 
 .rpm33 {
 	-webkit-transition: all 60s linear;
