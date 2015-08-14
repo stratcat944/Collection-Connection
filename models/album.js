@@ -4,10 +4,10 @@ var albumSchema = mongoose.Schema({
 
 	artist 		: String,
 	title		: String,
-	person		: String;
-	track		: String,
+	personnel	: [{name : String}],
+	tracks		: [{name : String}],
 	label		: String,
-	year		: String;
+	year		: String
 
 });
 

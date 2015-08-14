@@ -1,7 +1,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var indexController = require('./controllers/index.js');
-var albumController = require('./controllers/album.js')
+var albumController = require('./controllers/album.js');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/albumsdb')
 
 var app = express();
 app.set('view engine', 'jade');
