@@ -1,9 +1,10 @@
 .header {
-	background-color: darkgrey;
+	position: relative;
+	background-color: grey;
 	padding: 6%;
 	color: white;
 	font-weight: 700;
-	z-index: 4;
+	z-index: -1;
 }
 
 .vert {
@@ -12,63 +13,66 @@
 
 .border {
 	/*border-style: inset;*/
-	border-color: darkgrey;
+	border-color: green;
 	border-radius: 7px;
 }
 
 /*################## CSS from vulgarpicture.com ##################*/
-#container {
-	  width: 1242px;
-	 height: 1242px;
-	 margin: 0px 0px 0px 0px;	
-	z-index: 1;
-}
-
 
 #white_trnspt {
 	position: absolute;
-	  margin: -190px auto auto -180px;
-	 z-index: 13;
+	  margin: -80px 100px auto -280px;
+	 z-index: 60;
 }
 
 #shoplifters_trnspt {
 	position: absolute;
-	  margin: -190px auto auto 800px;
-	 z-index: 20;
+	  margin: 100px 100px 100px 700px;
+	 z-index: 50;
 }
 
 #alone_trnspt {
 	position: absolute;
-	  margin: 300px auto auto 232px;
-	 z-index: 12;
+	  margin: 50px auto auto 300px;
+	 z-index: 40;
 }
 
 #purple_trnspt {
 	position: absolute;
-	  margin: 680px auto auto 410px;
-	 z-index: 25;
+	  margin: -100px auto auto 100px;
+	 z-index: 30;
 }
 
-#diary_picdisc {
+#diary_trnspt {
 	position: absolute;
-	  margin: 245px auto auto 395px;	
-	 z-index: 11;
+	  margin: 245px auto -100px 395px;	
+	 z-index: 20;
+}
+#dolls_trnspt {
+	position: absolute;
+	margin: -200px auto auto -100px;
+	z-index: 10;
 }
 
-#albumContainer {
-	z-index: 1;
+#jfm-lp_trnspt {
+	position: absolute;
+	margin: 50px auto auto -50px;
+	z-index: 60;
 }
 
-/*.rpm33>img{
-	width:20%;
-}*/
+#drmbt_trnspt {
+	display: inline-block;
+	position: absolute;
+	margin: -150px auto auto 300px;
+	z-index: 70;
+}
 
 .rpm33 {
-	-webkit-transition: all 60s linear;
-	   -moz-transition: all 60s ease-in-out;
-	    -ms-transition: all 60s ease-out;
-		 -o-transition: all 60s ease-out;
-			transition: all 60s ease-out;
+	-webkit-transition: all 90s linear;
+	   -moz-transition: all 90s ease-in-out;
+	    -ms-transition: all 90s ease-out;
+		 -o-transition: all 90s ease-out;
+			transition: all 90s ease-out;
 }
 .rpm33:hover {
 	-webkit-transform: rotate(11880deg);
@@ -78,35 +82,3 @@
 			transform: rotate(11880deg);
 }			
 
-.rpm45 {
-	-webkit-transition: all 60s linear;
-	   -moz-transition: all 60s ease-in-out;
-	    -ms-transition: all 60s ease-out;
-		 -o-transition: all 60s ease-out;
-			transition: all 60s ease-out;
-}
-.rpm45:hover {
-	-webkit-transform: rotate(16200deg);
-	   -moz-transform: rotate(16200deg);
-		-ms-transform: rotate(16200deg);
-		 -o-transform: rotate(16200deg);	
-			transform: rotate(16200deg);
-}
-.rpm300 {
-	-webkit-transition: all 60s linear;
-	   -moz-transition: all 60s ease-in-out;
-	    -ms-transition: all 60s ease-out;
-		 -o-transition: all 60s ease-out;
-			transition: all 60s ease-out;
-}
-.rpm300:hover {
-	-webkit-transform: rotate(108000deg);
-	   -moz-transform: rotate(108000deg);
-		-ms-transform: rotate(108000deg);
-		 -o-transform: rotate(108000deg);	
-			transform: rotate(108000deg);
-}
-
-.recordContainer {
-	position: relative;
-}
