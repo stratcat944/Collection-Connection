@@ -1,70 +1,69 @@
 .header {
 	position: relative;
+	height: 280px;
+	width: 95%;
 	background-color: grey;
-	padding: 6%;
 	color: white;
 	font-weight: 700;
-	z-index: -1;
-}
-
-.vert {
-	vertical-align: bottom;
-}
-
-.border {
-	/*border-style: inset;*/
-	border-color: green;
-	border-radius: 7px;
+	z-index: 1;
 }
 
 /*################## CSS from vulgarpicture.com ##################*/
 
+#jfm-lp_trnspt {
+	position: absolute;
+	margin: -150px auto auto -9%;
+	z-index: 10;
+}
+
+#purple_trnspt {
+	position: absolute;
+	  margin: 50px auto auto -15px;
+	 z-index: 30;
+}
+
+#drmbt_trnspt {
+	position: absolute;
+	margin: -140px auto auto 8%;
+	z-index: 20;
+}
+
 #white_trnspt {
 	position: absolute;
-	  margin: -300px 300px auto 280px;
-	 z-index: 60;
+	  margin: -120px auto auto 25%;
+	 z-index: 15;
 }
 
 #shoplifters_trnspt {
 	position: absolute;
-	  margin: 100px 100px 100px 700px;
+	  margin: -70px 100px 100px 65%;
 	 z-index: 50;
 }
 
 #alone_trnspt {
 	position: absolute;
-	  margin: 50px auto auto 300px;
-	 z-index: 40;
+	  margin: 50px auto auto 16%;
+	 z-index: 25;
 }
 
-#purple_trnspt {
-	position: absolute;
-	  margin: -100px auto auto 100px;
-	 z-index: 30;
-}
 
 #diary_trnspt {
 	position: absolute;
-	  margin: 245px auto -100px 395px;	
+	  margin: -90px auto auto 750px;	
 	 z-index: 20;
 }
 #dolls_trnspt {
 	position: absolute;
-	margin: -200px auto auto -100px;
+	margin: -200px auto auto 90%;
 	z-index: 10;
 }
 
-#jfm-lp_trnspt {
-	position: absolute;
-	margin: 50px auto auto -50px;
-	z-index: 60;
-}
 
-#drmbt_trnspt {
-	display: inline-block;
+
+#wpinoyb_trnspt {
 	position: absolute;
-	margin: -150px auto auto 300px;
-	z-index: 70;
+	margin: 100px auto auto 900px;
+	z-index: 80;
 }
 
 .rpm33 {
