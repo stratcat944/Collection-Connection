@@ -8,18 +8,21 @@ body {
 	height: 280px;
 	width: 90%;
 	color: white;
-	font-weight: 700;
-	z-index: 100;
+	z-index: 98;
 	overflow: hidden;
+}
+
+.shadow {
+	text-shadow: 2px 2px 3px black;
 }
 
 .transparent {
 	background-image: url(../images/lp.jpg);
 	opacity: 0.7;
 }
-
-.shadow {
-	text-shadow: 2px 2px 3px black;
+.float {
+	position: relative;
+	z-index: 100;
 }
 
 .rpm33 {
@@ -36,8 +39,6 @@ body {
 		 -o-transform: rotate(11880deg);	
 			transform: rotate(11880deg);
 }
-
-/*################## CSS from vulgarpicture.com ##################*/
 
 #jfm-lp_trnspt {
 	position: absolute;
