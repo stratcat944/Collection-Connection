@@ -1,16 +1,32 @@
 body {
-	background-image: url(../images/lp.jpg);
 	color: white;
+	background-image: url(../images/lp.jpg);
 }
 
 .header {
-	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 	height: 280px;
 	width: 95%;
-	background-color: grey;
 	color: white;
 	font-weight: 700;
-	z-index: 1;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.rpm33 {
+	-webkit-transition: all 90s linear;
+	   -moz-transition: all 90s ease-in-out;
+	    -ms-transition: all 90s ease-out;
+		 -o-transition: all 90s ease-out;
+			transition: all 90s ease-out;
+}
+.rpm33:hover {
+	-webkit-transform: rotate(11880deg);
+	   -moz-transform: rotate(11880deg);
+		-ms-transform: rotate(11880deg);
+		 -o-transform: rotate(11880deg);	
+			transform: rotate(11880deg);
 }
 
 /*################## CSS from vulgarpicture.com ##################*/
@@ -92,18 +108,4 @@ body {
 	z-index: 32;
 }
 
-.rpm33 {
-	-webkit-transition: all 90s linear;
-	   -moz-transition: all 90s ease-in-out;
-	    -ms-transition: all 90s ease-out;
-		 -o-transition: all 90s ease-out;
-			transition: all 90s ease-out;
-}
-.rpm33:hover {
-	-webkit-transform: rotate(11880deg);
-	   -moz-transform: rotate(11880deg);
-		-ms-transform: rotate(11880deg);
-		 -o-transform: rotate(11880deg);	
-			transform: rotate(11880deg);
-}			
 
