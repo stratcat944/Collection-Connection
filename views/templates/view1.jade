@@ -1,59 +1,61 @@
 div.container-fluid
 
-	form(ng-submit="createAlbum()")
+	div.transparent
 
-		div.row
+		form(ng-submit="createAlbum()")
 
-			div.text-center.container.stage.center-block
+			div.row
 
-				h3 Enter the Artist Name and Album Title.
-				div.col-md-3
-				div.col-md-6
-					.form-group
-						input.form-control.text-center.input(ng-model="album.artist" placeholder="Artist Name")
-					.form-group
-						input.form-control.text-center.input(ng-model="album.title" placeholder="Album Title")
-				div.col-md-3
+				div.text-center.container.stage.center-block
 
-		div.row
-
-			div.text-center.container.stage.center-block
-
-					h3 Enter the Personnel.
-					h4 Click the Add button to add another, or the Next button to continue.
+					h3.shadow Enter the Artist Name and Album Title.
 					div.col-md-3
 					div.col-md-6
 						.form-group
-							input.form-control.text-center.input(ng-repeat="person in album.personnel" ng-model="person.name" placeholder="Personnel")
+							input.form-control.text-center.input(ng-model="album.artist" placeholder="Artist Name")
 						.form-group
-							.btn.btn-default.btn-md.button(ng-click='addPerson()') Add Another
+							input.form-control.text-center.input(ng-model="album.title" placeholder="Album Title")
 					div.col-md-3
 
-		div.row
+			div.row
 
-			div.text-center.stage.center-block
+				div.text-center.container.stage.center-block
 
-					h3 Enter the Album Tracks.
-					h4 Click the Add button to add another Album Track, or the Next button to continue.
-					div.col-md-3
-					div.col-md-6
-						.form-group
-							input.form-control.text-center.input(ng-repeat="track in album.tracks" ng-model="track.name" placeholder="Album Tracks")
-						.form-group
-							.btn.btn-default.btn-md.button(ng-click='addTrack()') Add Another
-					div.col-md-3
+						h3.shadow Enter the Personnel.
+						h4.shadow Click the Add button to add another, or the Next button to continue.
+						div.col-md-3
+						div.col-md-6
+							.form-group
+								input.form-control.text-center.input(ng-repeat="person in album.personnel" ng-model="person.name" placeholder="Personnel")
+							.form-group
+								.btn.btn-default.btn-md.button(ng-click='addPerson()') Add Another
+						div.col-md-3
 
-		div.row
+			div.row
 
-			div.text-center.stage.center-block
+				div.text-center.stage.center-block
 
-					h3 Enter the Label and Release Year.
-					div.col-md-3
-					div.col-md-6
-						.form-group
-							input.form-control.text-center.input(placeholder="Label" ng-model="album.label")
-						.form-group
-							input.form-control.text-center.input(placeholder="Release Year" ng-model="album.year")
-						.form-group
-							button.btn.btn-default.btn-md.button(type='submit') Submit
-					div.col-md-3
+						h3.shadow Enter the Album Tracks.
+						h4.shadow Click the Add button to add another Album Track, or the Next button to continue.
+						div.col-md-3
+						div.col-md-6
+							.form-group
+								input.form-control.text-center.input(ng-repeat="track in album.tracks" ng-model="track.name" placeholder="Album Tracks")
+							.form-group
+								.btn.btn-default.btn-md.button(ng-click='addTrack()') Add Another
+						div.col-md-3
+
+			div.row
+
+				div.text-center.stage.center-block
+
+						h3.shadow Enter the Label and Release Year.
+						div.col-md-3
+						div.col-md-6
+							.form-group
+								input.form-control.text-center.input(placeholder="Label" ng-model="album.label")
+							.form-group
+								input.form-control.text-center.input(placeholder="Release Year" ng-model="album.year")
+							.form-group
+								button.btn.btn-default.btn-md.button(type='submit') Submit
+						div.col-md-3

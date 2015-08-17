@@ -1,17 +1,25 @@
 body {
 	color: white;
-	background-image: url(../images/lp.jpg);
 }
 
 .header {
 	margin-left: auto;
 	margin-right: auto;
 	height: 280px;
-	width: 95%;
+	width: 90%;
 	color: white;
 	font-weight: 700;
 	z-index: 100;
 	overflow: hidden;
+}
+
+.transparent {
+	background-image: url(../images/lp.jpg);
+	opacity: 0.7;
+}
+
+.shadow {
+	text-shadow: 2px 2px 3px black;
 }
 
 .rpm33 {
@@ -33,78 +41,79 @@ body {
 
 #jfm-lp_trnspt {
 	position: absolute;
-	margin: -150px auto auto -9%;
+	margin: -150px auto auto -10%;
 	z-index: 10;
 }
 
 #purple_trnspt {
 	position: absolute;
-	  margin: 70px auto auto -15px;
+	  margin: 50px auto auto -8%;
 	 z-index: 30;
 }
 
 #drmbt_trnspt {
 	position: absolute;
-	margin: -140px auto auto 8%;
-	z-index: 14;
-}
-
-#white_trnspt {
-	position: absolute;
-	  margin: -140px auto auto 26%;
-	 z-index: 15;
-}
-
-#shoplifters_trnspt {
-	position: absolute;
-	  margin: -90px 100px 100px 40%;
-	 z-index: 50;
+	margin: -140px auto auto 6%;
+	z-index: 16;
 }
 
 #alone_trnspt {
 	position: absolute;
-	  margin: 50px auto auto 16%;
+	  margin: 50px auto auto 8%;
 	 z-index: 51;
 }
 
-#diary_trnspt {
+#white_trnspt {
 	position: absolute;
-	  margin: 50px auto auto 80%;	
-	 z-index: 49;
+	  margin: -140px auto auto 22%;
+	 z-index: 15;
 }
+
 #dolls_trnspt {
 	position: absolute;
-	margin: 50px auto auto 34%;
+	margin: 50px auto auto 24%;
 	z-index: 16;
+}
+
+#shoplifters_trnspt {
+	position: absolute;
+	  margin: -50px 100px 100px 34%;
+	 z-index: 50;
 }
 
 #wpinoyb_trnspt {
 	position: absolute;
-	margin: 10px auto auto 51%;
+	margin: 10px auto auto 45%;
 	z-index: 40;
+}
+
+#roya_trnspt {
+	position: absolute;
+	margin: -180px auto auto 40%;
+	z-index: 37;
 }
 
 #william_trnspt {
 	position: absolute;
-	margin: 10px auto auto 63%;
+	margin: 10px auto auto 62%;
 	z-index: 51;
 }
 
 #ufo_trnspt {
 	position: absolute;
-	margin: -150px auto auto 73%;
+	margin: -150px auto auto 58%;
 	z-index: 38;
 }
 
-#roya_trnspt {
+#diary_trnspt {
 	position: absolute;
-	margin: -160px auto auto 55%;
-	z-index: 37;
+	  margin: 40px auto auto 78%;	
+	 z-index: 49;
 }
 
 #bog_trnspt {
 	position: absolute;
-	margin: -140px auto auto 87%;
+	margin: -140px auto auto 76%;
 	z-index: 32;
 }
 
