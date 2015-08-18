@@ -1,6 +1,6 @@
 div.container-fluid
 
-	div.albumContainer.shadow(ng-repeat="album in profile | limitTo: 1: page")
+	div.albumContainer.shadow.background(ng-repeat="album in profile | limitTo: 1: page")
 
 		div.row
 
@@ -19,7 +19,7 @@ div.container-fluid
 			div.col-md-4.text-center.border
 				h4 Tracks:
 					p
-						h5 {{albums.tracks}}
+						h5(ng-repeat="track in album.tracks") {{track.name}}
 			div.col-md-4.text-center.border
 				h4 Personnel:
 					p
@@ -33,7 +33,7 @@ div.container-fluid
 					p
 						h5 {{album.year}}
 
-		div
+		div.text-center.center-block
 
 			button.btn.btn-default.btn-md.button(ng-click="prevRecord()") Prev
 			button.btn.btn-default.btn-md.button(ng-click="nextRecord()") Next

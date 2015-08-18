@@ -15,7 +15,7 @@ collectConnect.config(function($routeProvider){
 });
 
 
-collectConnect.controller('view1', function($scope, $http){
+collectConnect.controller('view1', function($scope, $http, $location){
 	console.log('View 1 Controller!');
 	$scope.album = {}
 
@@ -42,6 +42,7 @@ collectConnect.controller('view1', function($scope, $http){
 				personnel:[{}],
 				tracks: [{}]
 			}
+			$location.url('/profile')
 		})
 	}
 })
