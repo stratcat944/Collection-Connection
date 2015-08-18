@@ -7,6 +7,11 @@ body {
 	background-image: url(../images/lp.jpg);
 }
 
+.size {
+	height: auto;
+	width: 15vw;
+}
+
 .header {
 	margin-left: auto;
 	margin-right: auto;

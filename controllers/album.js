@@ -1,12 +1,29 @@
-var AlbumDocument = require('../models/album.js')
+var mb = require('musicbrainz');
+var CA = require('coverart');
+var ca = new CA({userAgent:'CollectConnect'});
+var AlbumDocument = require('../models/album.js');
 
 var albumController = {
 	create: function(req, res) {
-		var newAlbum = new AlbumDocument(req.body)
-		newAlbum.save(function(err, album){
-			console.log(err);
-			res.send(album);
-		})
+
+
+
+		// MusicBrainz
+
+		mb.searchReleases(req.body.title, { country: 'US' }, function(err, releases){
+		    console.log(releases[0].id);
+			ca.release(releases[0].id,{size: 'small'}, function(err, response){
+				console.log(err);
+			    // console.log(response.images[0].image);
+			    req.body.coverArt = response.images[0].image
+				var newAlbum = new AlbumDocument(req.body)
+				newAlbum.save(function(err, album){
+					console.log(err);
+					res.send(album);
+				})
+			});
+		});
+
 	},
 
 	profile: function(req, res) {

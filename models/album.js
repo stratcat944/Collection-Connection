@@ -8,7 +8,8 @@ var albumSchema = mongoose.Schema({
 	tracks		: [{name : String}],
 	label		: String,
 	year		: String,
-	timeStamp	: Date
+	timeStamp	: Date,
+	coverArt 	: String, 
 
 });
 

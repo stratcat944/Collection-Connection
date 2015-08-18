@@ -33,6 +33,9 @@ div.container-fluid
 					p
 						h5 {{album.year}}
 
+		div.row
+			img.size(ng-src="{{album.coverArt}}")
+
 		div.text-center.center-block
 
 			button.btn.btn-default.btn-md.button(ng-click="prevRecord()") Prev

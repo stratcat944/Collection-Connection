@@ -3,6 +3,8 @@
     "body-parser": "^1",
     "express": "^4.13.3",
     "jade": "^1",
-    "mongoose": "~4.1.2"
+    "mongoose": "~4.1.2",
+    "coverart": "0.0.1",
+    "musicbrainz": "~0.2.5"
   }
 }
