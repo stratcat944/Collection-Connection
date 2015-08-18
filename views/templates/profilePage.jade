@@ -23,7 +23,7 @@ div.container-fluid
 			div.col-md-4.text-center.border
 				h4 Personnel:
 					p
-						h5 {{album.person}}
+						h5(ng-repeat="person in album.personnel") {{person.name}}
 			div.col-md-4.text-center.border
 				h4 Label:
 					p
