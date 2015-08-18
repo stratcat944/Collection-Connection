@@ -34,7 +34,9 @@ div.container-fluid
 						h5 {{album.year}}
 
 		div.row
-			img.size(ng-src="{{album.coverArt}}")
+			div.col-md-12.text-center.border
+				img.size(ng-src="{{album.coverArt}}")
+				p Album Cover
 
 		div.text-center.center-block
 
