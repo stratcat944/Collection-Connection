@@ -7,9 +7,14 @@ var albumSchema = mongoose.Schema({
 	personnel	: [{name : String}],
 	tracks		: [{name : String}],
 	label		: String,
-	year		: String
+	year		: String,
+	timeStamp	: Date
 
 });
+
+albumSchema.path('timeStamp').default(function(){
+	return new Date();
+})
 
 var AlbumDocument = mongoose.model('AlbumDocument', albumSchema);
 

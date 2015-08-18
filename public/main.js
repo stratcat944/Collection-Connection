@@ -48,11 +48,22 @@ collectConnect.controller('view1', function($scope, $http){
 
 collectConnect.controller('profile', function($scope, $http){
 	console.log('profile view');
+	$scope.page = 0
 	$http.get('/albums')
 	.then(function(returnData){
 		console.log('return data?', returnData);
 		$scope.profile = returnData.data;
 	})
+	$scope.prevRecord = function(){
+		if ($scope.page > 0){
+			$scope.page--
+		};
+	}
+	$scope.nextRecord = function(){
+		if ($scope.page < $scope.profile.length-1){
+			$scope.page++;
+		}
+	}
 })
 
 

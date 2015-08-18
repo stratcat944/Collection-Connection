@@ -1,6 +1,6 @@
 div.container-fluid
 
-	div.albumContainer(ng-repeat="album in profile")
+	div.albumContainer(ng-repeat="album in profile | limitTo: 1: page")
 
 		div.row
 
@@ -20,3 +20,6 @@ div.container-fluid
 				h4 Label
 				br
 				h4 Year
+
+	button.btn(ng-click="prevRecord()") Previous
+	button.btn(ng-click="nextRecord()") Next

@@ -10,7 +10,7 @@ var albumController = {
 	},
 
 	profile: function(req, res) {
-		AlbumDocument.find({}, function(err, albums){
+		AlbumDocument.find({}).sort({timeStamp: -1}).exec(function(err, albums){
 			res.send(albums);
 		})
 
