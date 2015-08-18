@@ -1,25 +1,39 @@
 div.container-fluid
 
-	div.albumContainer(ng-repeat="album in profile | limitTo: 1: page")
+	div.albumContainer.shadow(ng-repeat="album in profile | limitTo: 1: page")
 
 		div.row
 
 			div.col-md-6.text-center.stage
-				h3 Artist-{{album.artist}}
+				h3 Artist:
+					p
+						h4 {{album.artist}}
 
 			div.col-md-6.text-center.stage
-				h3 Album
+				h3 Album:
+					p
+						h4 {{album.title}}
 
 		div.row
 
 			div.col-md-4.text-center.border
-				h4 Tracks
+				h4 Tracks:
+					p
+						h5 {{albums.tracks}}
 			div.col-md-4.text-center.border
-				h4 Personnel
+				h4 Personnel:
+					p
+						h5 {{album.person}}
 			div.col-md-4.text-center.border
-				h4 Label
+				h4 Label:
+					p
+						h5 {{album.label}}
 				br
-				h4 Year
+				h4 Year:
+					p
+						h5 {{album.year}}
 
-	button.btn(ng-click="prevRecord()") Previous
-	button.btn(ng-click="nextRecord()") Next
+		div
+
+			button.btn.btn-default.btn-md.button(ng-click="prevRecord()") Prev
+			button.btn.btn-default.btn-md.button(ng-click="nextRecord()") Next
