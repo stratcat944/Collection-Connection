@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var indexController = require('./controllers/index.js');
 var albumController = require('./controllers/album.js');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/albumsdb');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/albumsdb');
 
 
 var app = express();
@@ -18,7 +18,8 @@ app.get('/templates/:templateName', indexController.templates);
 
 app.post('/albums/create', albumController.create)
 app.get('/albums', albumController.profile)
+var port = process.env.PORT || 3000;
 
-var server = app.listen(3000, function() {
+var server = app.listen(port, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
