@@ -1,20 +1,22 @@
 div.container-fluid
 
-	div.row
+	div.albumContainer(ng-repeat="album in profile")
 
-		div.col-md-6.text-center.stage
-			h3 Artist
+		div.row
 
-		div.col-md-6.text-center.stage
-			h3 Album
+			div.col-md-6.text-center.stage
+				h3 Artist-{{album.artist}}
 
-	div.row
+			div.col-md-6.text-center.stage
+				h3 Album
 
-		div.col-md-4.text-center.border
-			h4 Tracks
-		div.col-md-4.text-center.border
-			h4 Personnel
-		div.col-md-4.text-center.border
-			h4 Label
-			br
-			h4 Year
+		div.row
+
+			div.col-md-4.text-center.border
+				h4 Tracks
+			div.col-md-4.text-center.border
+				h4 Personnel
+			div.col-md-4.text-center.border
+				h4 Label
+				br
+				h4 Year

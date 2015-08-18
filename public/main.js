@@ -7,6 +7,10 @@ collectConnect.config(function($routeProvider){
 			templateUrl	: '/templates/view1', 		// View
 			controller 	: 'view1'             // Controller
 		})
+		.when('/profile',{
+			templateUrl : '/templates/profilePage',
+			controller  : "profile", 
+		})
 
 });
 
@@ -38,9 +42,17 @@ collectConnect.controller('view1', function($scope, $http){
 				personnel:[{}],
 				tracks: [{}]
 			}
-			
 		})
 	}
+})
+
+collectConnect.controller('profile', function($scope, $http){
+	console.log('profile view');
+	$http.get('/albums')
+	.then(function(returnData){
+		console.log('return data?', returnData);
+		$scope.profile = returnData.data;
+	})
 })
 
 

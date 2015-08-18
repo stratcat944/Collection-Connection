@@ -16,6 +16,7 @@ app.get('/', indexController.index);
 app.get('/templates/:templateName', indexController.templates);
 
 app.post('/albums/create', albumController.create)
+app.get('/albums', albumController.profile)
 
 var server = app.listen(3000, function() {
 	console.log('Express server listening on port ' + server.address().port);

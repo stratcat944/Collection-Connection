@@ -8,6 +8,13 @@ var albumController = {
 			res.send(album);
 		})
 	},
+
+	profile: function(req, res) {
+		AlbumDocument.find({}, function(err, albums){
+			res.send(albums);
+		})
+
+	}
 	
 };
 
