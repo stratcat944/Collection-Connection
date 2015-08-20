@@ -5,6 +5,7 @@ body {
 
 .background {
 	background-image: url(../images/lp.jpg);
+	background-size: cover;
 }
 
 .size {
