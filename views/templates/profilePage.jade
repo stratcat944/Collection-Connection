@@ -1,6 +1,6 @@
-div.container-fluid
+div.container-fluid.background
 
-	div.albumContainer.shadow.background(ng-repeat="album in profile | limitTo: 1: page")
+	div.albumContainer.shadow(ng-repeat="album in profile | limitTo: 1: page")
 
 		div.row
 
